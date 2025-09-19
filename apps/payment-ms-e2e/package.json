@@ -1,0 +1,26 @@
+{
+  "name": "@nestjs-microservices/payment-ms-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@nestjs-microservices/payment-ms"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/payment-ms-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@nestjs-microservices/payment-ms:build",
+          "@nestjs-microservices/payment-ms:serve"
+        ]
+      }
+    }
+  }
+}

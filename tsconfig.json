@@ -2,5 +2,30 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/api-gateway-e2e"
+    },
+    {
+      "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./apps/order-ms-e2e"
+    },
+    {
+      "path": "./apps/order-ms"
+    },
+    {
+      "path": "./apps/payment-ms-e2e"
+    },
+    {
+      "path": "./apps/payment-ms"
+    },
+    {
+      "path": "./apps/notification-ms-e2e"
+    },
+    {
+      "path": "./apps/notification-ms"
+    }
+  ]
 }
